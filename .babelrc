@@ -1,0 +1,36 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env", { "useBuiltIns": "usage" }
+        ],
+        "@babel/preset-react", ["@babel/preset-flow"]
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "#test": "./test",
+                    "#services": "./src/coreLayer/services",
+                    "#presentationLayer": "./src/presentationLayer",
+                    "#containers": "./src/presentationLayer/containers",
+                    "#components": "./src/presentationLayer/components",
+                    "#config": "./src/config",
+                    "#logic": "./src/businessLayer",
+                    "#hocs": "./src/presentationLayer/hocs",
+                    "#redux": "./src/redux",
+                    "#assets": "./src/assets",
+                    "#utils": "./src/utils",
+                    "#businessLayer": "./src/businessLayer"
+                }
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose":  true
+            }
+        ]
+    ]
+}

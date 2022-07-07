@@ -1,0 +1,36 @@
+.wrapper {
+  height: 100%;
+}
+
+.title {
+  height: 60px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+}
+
+.dropdown_container {
+  height: 60px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.dropdown_container {
+  .item {
+    width: 300px;
+    margin-left: 20px;
+  }
+}
+
+.content {
+  min-height: 400px;
+  padding: 15px;
+}
+
+.footer {
+  height: 60px;
+  margin-top: 20px;
+  text-align: right;
+}

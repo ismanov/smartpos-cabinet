@@ -1,0 +1,73 @@
+.loyaltySys {
+  position: relative;
+
+  &__main-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 10px;
+
+    &__item {
+      width: 50%;
+      margin: 0 0 20px;
+      padding: 0 10px;
+    }
+  }
+
+  &__downgrade {
+    text-align: right;
+    margin: 0 0 10px;
+  }
+
+  &__rules {
+    margin: 0;
+
+    &__desc {
+      padding: 6px 10px 6px 50px;
+      background: #44C057;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+
+      &.trHead {
+        min-height: 50px;
+
+        .loyaltySys__rules__cell {
+          font-size: 14px;
+          color: #64748B;
+          padding: 9px 10px;
+        }
+      }
+    }
+
+    &__cell {
+      flex-grow: 1;
+      padding: 14px 10px;
+
+      &.cell-min-amount {
+        min-width: 15%;
+        max-width: 15%;
+      }
+
+      &.cell-bonus {
+        min-width: 15%;
+        max-width: 15%;
+      }
+
+      &.cell-field {
+        min-width: 15%;
+        max-width: 15%;
+      }
+    }
+
+
+  }
+
+  &__submit {
+    margin: 0 0 20px;
+    text-align: right;
+  }
+}

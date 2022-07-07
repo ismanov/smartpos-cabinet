@@ -1,0 +1,13 @@
+.add-loyalty-client {
+  &__user_info {
+    margin: 8px 0 0;
+
+    .MuiAlert-icon {
+      display: none;
+    }
+  }
+
+  &__user_error {
+    margin: 8px 0 0;
+  }
+}

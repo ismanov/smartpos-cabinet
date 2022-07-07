@@ -1,0 +1,389 @@
+.section-h1 {
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  padding: 15px 0;
+  min-height: 52px;
+}
+
+.simple-pagination {
+  .fast-change-page, .page-size-change {
+    display: none;
+  }
+
+  & > div {
+    height: auto !important;
+  }
+}
+
+.supplier-catalog {
+  padding-bottom: 20px;
+
+  &__content {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-radius: 4px;
+
+    &-in {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+  }
+
+  &__products {
+    width: 350px;
+    padding: 6px 4px 4px;
+    display: flex;
+    flex-direction: column;
+
+    .simple-pagination {
+      padding-top: 16px;
+      flex-shrink: 0;
+
+      & > div {
+        border-top: 1px solid #ddd;
+        padding: 8px 0;
+        justify-content: center;
+      }
+
+      .MuiIconButton-root {
+        padding: 8px;
+      }
+    }
+
+    &__current {
+      position: relative;
+      margin-bottom: 20px;
+
+      &-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        font-weight: 400;
+      }
+
+      &-body {
+        background: #fbfdfe;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04), 0px 1px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 16px 20px;
+
+        &-in {
+          max-width: 258px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__scroll-list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: #fbfdfe;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04), 0px 1px 4px rgba(0, 0, 0, 0.1);
+      min-height: 80px;
+      border-radius: 4px;
+      padding: 16px 20px 0;
+
+      &-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        font-weight: 400;
+      }
+
+      &-body {
+        overflow: auto;
+
+        &-in {
+          max-width: 258px;
+          margin: 0 auto;
+
+          .empty-icon-block {
+            position: static;
+          }
+        }
+      }
+    }
+
+    &-item {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        cursor: pointer;
+
+        &:hover {
+          color: #009f3c;
+        }
+      }
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 76px;
+    flex-shrink: 0;
+
+    &-item {
+      margin: 0 15px 20px 0;
+      min-width: 170px;
+
+      &.filter-search {
+        input {
+          padding-left: 10px;
+        }
+      }
+
+      .MuiFormControlLabel-root {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.87);
+      }
+
+      .MuiButtonBase-root {
+        padding: 0;
+      }
+
+      .MuiTypography-body1 {
+        padding: 1px 0 0 7px;
+      }
+    }
+  }
+
+  &__offers {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 6px 0 0;
+
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+      font-weight: 400;
+      padding: 0 4px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      position: relative;
+      min-height: 200px;
+      padding: 4px;
+    }
+
+    &__item {
+      position: relative;
+      background: #f9f9f9;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04), 0px 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      padding: 8px;
+      margin-bottom: 16px;
+      width: 32.5%;
+
+      &-empty {
+        width: 32.5%;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 6px rgba(68, 192, 87, 0.5);
+      }
+
+      &-favourite {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+      }
+
+      &-supplier {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 5px;
+
+        span {
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.87);
+
+          &:hover {
+            color: #009f3c;
+          }
+        }
+      }
+
+      &-name {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      &-price {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .accordion-simple {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        box-shadow: none;
+
+        .accordion-simple__hide {
+          display: none;
+        }
+
+        &.Mui-expanded {
+          margin: 0;
+
+          .accordion-simple__more {
+            display: none;
+          }
+
+          .accordion-simple__hide {
+            display: block;
+          }
+        }
+
+        &:before {
+          display: none;
+        }
+
+        .MuiAccordionSummary-root {
+          display: inline-flex;
+          padding: 0;
+          min-height: 0;
+          justify-content: flex-start;
+          order: 1;
+
+          .MuiAccordionSummary-content {
+            margin: 0;
+            flex-grow: inherit;
+
+            .MuiTypography-body1 {
+              font-size: 12px;
+              color: #a9abaf;
+            }
+          }
+
+          .MuiIconButton-root {
+            padding: 0 5px;
+            color: #a9abaf;
+          }
+        }
+
+        .MuiCollapse-container {
+          order: 0;
+
+          .MuiAccordionDetails-root {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &__details {
+      font-size: 12px;
+      color: #a9abaf;
+
+      &-item {
+        font-size: 14px;
+        margin-bottom: 4px;
+
+        &-total {
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 10px;
+
+          &-title {
+            font-size: 14px;
+            line-height: 26px;
+            margin-right: 16px;
+          }
+
+          &-price {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a202e;
+          }
+        }
+      }
+
+      &-form {
+        display: flex;
+        padding-top: 10px;
+
+        &-field {
+          margin: 0 12px 12px 0;
+
+          &.form-field-error {
+            .form-field-note {
+              color: #FF0000;
+            }
+
+            .MuiOutlinedInput-notchedOutline {
+              border-color: #FF0000;
+            }
+          }
+
+          .form-field-note {
+            font-size: 12px;
+            padding-top: 4px;
+          }
+
+          .MuiOutlinedInput-input {
+            padding-top: 14px;
+            padding-bottom: 14px;
+          }
+
+          .MuiSelect-select {
+            min-width: 100px;
+          }
+
+          .MuiInputBase-input {
+            width: 68px;
+          }
+
+          .MuiInputLabel-outlined {
+            transform: translate(14px, 17px) scale(1);
+          }
+
+          &.field-delivery {
+            .MuiInputBase-input {
+              width: 135px;
+            }
+          }
+
+          &.button-field {
+            display: flex;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .supplier-catalog__offers__item {
+    width: 49%;
+  }
+}

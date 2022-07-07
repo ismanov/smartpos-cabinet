@@ -1,0 +1,92 @@
+.add-agreement {
+  position: relative;
+
+  &__block {
+    position: relative;
+    border: 1px solid #CFD8E3;
+    padding: 15px 20px;
+    border-radius: 4px;
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 0 0 15px;
+
+      &__left {
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        width: 400px;
+        span {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  &__services {
+    position: relative;
+    min-height: 100px;
+
+    &__table-wr {
+      width: 100%;
+    }
+  }
+
+  &__custom-services {
+    margin: 30px 0 0;
+
+    &__header {
+      margin: 0 0 7px;
+    }
+
+    .add-row {
+      vertical-align: top;
+
+      .add-agreement__custom-services__actions {
+        padding: 7px 0;
+      }
+    }
+
+    &__col {
+      //padding: 10px 7px;
+    }
+
+    &__service {
+      width: 25%;
+    }
+
+    &__tariff {
+      width: 25%;
+    }
+
+    &__branches {
+      width: 25;
+    }
+
+    &__sub-total {
+      width: 18%;
+      padding: 15px 0 0;
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: flex-end;
+
+      .ant-btn {
+        margin: 0 0 0 10px;
+
+        &.ant-btn-icon-only {
+          font-size: 0;
+          line-height: 0;
+        }
+      }
+    }
+
+    &__submit {
+      margin: 20px 0 0;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  display: block;
+  //border: 1px solid #eee;
+  color: #555;
+  height: 100%;
+}
+
+.header {
+  padding: 10px;
+}
+
+.header > .title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.header > .button {
+  position: relative;
+  float: right;
+  font-size: 0.85rem;
+  margin-right: 8px;
+  height: 30px;
+}
+
+.content {
+  overflow: auto;
+  //background-color: #8f8f8f;
+}
+
+.footer {
+  height: 40px;
+  padding: 5px;
+}
+
+.footer > .content {
+  text-align: right;
+}

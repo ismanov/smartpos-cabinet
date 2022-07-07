@@ -1,0 +1,21 @@
+.wrapper {
+  display: inline-block;
+  border: 1px solid #009f3c;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.wrapper .item {
+  background-color: white;
+  color: #009f3c;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.wrapper .active {
+  color: white;
+  background-color: #009f3c;
+}
+

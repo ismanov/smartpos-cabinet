@@ -1,0 +1,354 @@
+@import "../../../../../styles/variables.scss";
+
+.orderlist {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 16px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    .section-h1 {
+      padding: 0;
+      min-height: 0;
+    }
+
+    button {
+      margin-left: 15px;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+
+    &__item {
+      margin: 0 20px 20px 0;
+      min-width: 150px;
+
+      &.sub-statuses {
+        width: 200px;
+      }
+
+      &.suppliers-field {
+        min-width: 300px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  .accordion-row {
+    display: flex;
+    align-items: center;
+
+    .table-row-number {
+      min-width: 35px;
+    }
+
+    .accordion-row-arr {
+      margin-left: 15px;
+
+      &-opened {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .order-table-details {
+    padding: 20px;
+    background: #f5f5f5;
+
+    .makeStyles-body-34 {
+      background: #fff;
+    }
+
+    &-item {
+      text-align: left;
+      margin: 0 0 15px;
+    }
+  }
+}
+
+/* ORDER DETAILS
+-------------------------- */
+
+.order-detail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 16px;
+
+  &__head {
+    display: flex;
+  }
+
+  &__in {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    min-height: 200px;
+    background: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    .ordering {
+      padding: 0;
+
+      &__content {
+        padding: 0;
+        box-shadow: none;
+        background: none;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 20px;
+
+    &__left {
+      display: flex;
+    }
+
+    &__item {
+      max-width: 280px;
+      margin: 0 30px 20px 0;
+
+      &-title {
+        font-size: 14px;
+        margin: 0 0 4px;
+      }
+
+      &-body {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__tabs {
+    .MuiTabs-flexContainer {
+      border-bottom: 1px solid #e0e0e0;
+
+      .MuiTab-fullWidth {
+        flex-grow: inherit;
+
+        &.Mui-selected, &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .MuiTabs-indicator {
+      background: $primary;
+    }
+
+    &__item {
+      padding: 20px 0 0;
+    }
+  }
+
+  &__products {
+    &__notes {
+      &-head {
+        font-size: 16px;
+        margin: 20px 0 6px;
+      }
+
+      &__item {
+        border: 1px solid #e0e0e0;
+        padding: 10px;
+        margin: 0 0 10px;
+
+        &__title {
+          font-size: 15px;
+          font-weight: bold;
+
+          span {
+            font-weight: normal;
+            padding-left: 15px;
+            font-size: 14px;
+          }
+        }
+
+        &__body {
+          font-size: 14px;
+        }
+      }
+
+      &.notes-odd {
+        .order-detail__products__notes__item {
+          &:nth-child(even) {
+            background: #f5f5f5;
+          }
+        }
+      }
+
+      &.notes-even {
+        .order-detail__products__notes__item {
+          &:nth-child(odd) {
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 0 20px;
+
+      .MuiButton-root {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.contract-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__error {
+    color: $error;
+    margin: 0 0 20px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &__warning {
+      color: $error;
+    }
+
+    &__link {
+      color: $primary;
+    }
+  }
+}
+
+.order-invoice-payment {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  iframe {
+    border: none;
+  }
+}
+
+.power-of-attorney {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__right {
+      display: flex;
+    }
+  }
+
+  &__form {
+    width: 740px;
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
+
+    .field-error {
+      .form-field-note {
+        color: #FF0000;
+        font-size: 13px;
+      }
+
+      .MuiOutlinedInput-notchedOutline, .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+        border-color: #FF0000;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    &__triple-row {
+      display: flex;
+      justify-content: space-between;
+
+      .power-of-attorney__form__item {
+        display: flex;
+        width: 32%;
+
+        &-l {
+          width: 165px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &__double-row {
+      display: flex;
+      justify-content: space-between;
+
+      .power-of-attorney__form__item {
+        width: 49%;
+      }
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  iframe {
+    border: none;
+  }
+}
+
+.order-invoice {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__right {
+      display: flex;
+
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  iframe {
+    border: none;
+  }
+}

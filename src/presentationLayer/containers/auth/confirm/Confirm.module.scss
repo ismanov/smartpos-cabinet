@@ -1,0 +1,21 @@
+.container {
+  transition: all 450ms ease-in-out;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.container.active {
+  opacity: 1;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.logo {
+  text-align: center;
+}

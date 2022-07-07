@@ -1,0 +1,225 @@
+@import "../../../../styles/variables.scss";
+
+.supplier-detail {
+  &__content {
+    height: calc(100vh - 5rem - 200px);
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  &.supplier-detail-modal {
+    .supplier-detail__content {
+      height: auto;
+      min-height: 500px;
+      box-shadow: none;
+    }
+  }
+
+  .supplier-categories {
+    &-filter {
+      display: flex;
+
+      &-item {
+        position: relative;
+        margin: 0 15px 20px 0;
+        width: 256px;
+
+        &.disabled-filter-item {
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: default;
+          }
+
+          .filter-search, .filter-category-search {
+            background: #f2f2f2;
+
+            fieldset {
+              border-color: #e6e6e6;
+            }
+          }
+        }
+
+        &.lookup-field {
+          font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        }
+
+        &.button-field {
+          display: flex;
+          margin-left: auto;
+          margin-right: 0;
+          width: auto;
+        }
+      }
+    }
+
+    .filter-search {
+      background: #fff;
+
+      input {
+        padding: 17px 14px 18px;
+
+        &::placeholder {
+          color: #808080;
+          opacity: 1;
+        }
+      }
+    }
+
+    .filter-category-search {
+      position: relative;
+      background: #fff;
+
+      svg {
+        position: absolute;
+        top: 17px;
+        right: 9px;
+        color: #ccc;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        right: 36px;
+        bottom: 9px;
+        width: 1px;
+        background: #ccc;
+      }
+
+      input {
+        padding: 17px 46px 18px 0;
+
+        &::placeholder {
+          color: #808080;
+          opacity: 1;
+        }
+      }
+    }
+
+    &-menu {
+      display: none;
+      position: absolute;
+      top: 62px;
+      left: 0;
+      right: -300px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      min-height: 95px;
+      max-height: 600px;
+      box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.1);
+      z-index: 10;
+      padding-bottom: 1px;
+      overflow: auto;
+
+      &.opened-menu {
+        display: block;
+      }
+    }
+  }
+
+  &__products {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &-in {
+      position: relative;
+      overflow: auto;
+    }
+
+    &__list {
+      position: relative;
+      min-height: 120px;
+
+      &__item {
+        position: relative;
+        display: flex;
+        padding: 10px 20px;
+        border-bottom: 1px solid #eee;
+
+        &-name {
+          flex-grow: 1;
+          max-width: 450px;
+          margin-right: 20px;
+        }
+
+        &-units {
+          width: 146px;
+          margin-right: 20px;
+        }
+
+        &-count {
+          width: 112px;
+          margin-right: 20px;
+        }
+
+        &-delivery {
+          width: 180px;
+          margin-right: 20px;
+        }
+
+        &-price {
+          width: 200px;
+          margin-right: 20px;
+          font-size: 14px;
+        }
+
+        &-total {
+          width: 200px;
+          font-size: 14px;
+        }
+
+        &-button {
+          display: flex;
+          margin-left: auto;
+        }
+      }
+
+      .MuiSelect-select.Mui-disabled, .MuiInputBase-input.Mui-disabled {
+        cursor: default;
+        z-index: 1;
+      }
+
+      .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+        background: #f2f2f2;
+        border-color: #e6e6e6;
+      }
+
+      .primary-btn-wr {
+        .MuiIconButton-root:not(.Mui-disabled) {
+          color: $primary;
+        }
+      }
+
+      .delete-btn-wr {
+        .MuiIconButton-root:not(.Mui-disabled) {
+          color: $error;
+        }
+      }
+
+      .form-field-error {
+        .form-field-note {
+          color: #FF0000;
+          font-size: 12px;
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+          border-color: #FF0000;
+        }
+      }
+    }
+  }
+
+  &__warning {
+    text-align: center;
+  }
+}

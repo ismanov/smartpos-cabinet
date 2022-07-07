@@ -1,0 +1,20 @@
+/* ----- pagination ---- */
+
+.go_to_page {
+  margin-left: 15px;
+
+}
+
+.small_input {
+  transition: border-color 200ms linear;
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px #8f8f8f solid;
+  height: 30px;
+  font-size: 14px;
+  max-width: 60px;
+}
+
+.small_input:focus {
+  border-color: #009f3c;
+}

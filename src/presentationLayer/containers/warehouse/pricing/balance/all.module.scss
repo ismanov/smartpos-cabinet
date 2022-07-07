@@ -1,0 +1,47 @@
+.wrapper {
+  height: 100%;
+}
+
+.filter {
+  height: 80px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.content {
+  margin-top: 10px;
+  height: calc(100% - 90px);
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+}
+
+.content_left {
+  width: 40%;
+  border: 1px solid #eee;
+  overflow: auto;
+}
+
+.content_right {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.content_right .product_list {
+
+  border: 1px solid #eee;
+  overflow: auto;
+  height: calc(100% - 120px);
+
+}
+
+.pagination {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}

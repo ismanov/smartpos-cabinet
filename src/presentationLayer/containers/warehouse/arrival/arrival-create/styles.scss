@@ -1,0 +1,243 @@
+@import "../../../../../styles/variables.scss";
+
+.arrival-create {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-bottom: 16px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-radius: 4px;
+  }
+
+  &__details {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      min-width: 350px;
+      margin: 0 20px 20px 0;
+
+      &.sm-field {
+        min-width: 0;
+        width: 230px;
+      }
+
+      &.ordering__details__item-row {
+        display: flex;
+        justify-content: space-between;
+
+        .ordering__details__item-col {
+          width: 49%;
+        }
+      }
+
+      &.branch-field {
+        display: flex;
+
+        .branch-field-item {
+          flex-grow: 1;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  &__products {
+    position: relative;
+    padding-top: 10px;
+    min-height: 100px;
+
+    &__total {
+      text-align: right;
+      margin: 0 0 15px;
+      font-weight: bold;
+    }
+
+    .arrival-create__products__head {
+      display: flex;
+      justify-content: space-between;
+      background: #eee;
+      margin-bottom: 10px;
+
+      &-left {
+        display: flex;
+      }
+
+      &-right {
+        display: flex;
+      }
+
+      & > div > div {
+        font-weight: bold;
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+
+    .arrival-create__products__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+
+      &-left {
+        display: flex;
+      }
+
+      &-right {
+        display: flex;
+      }
+
+      & > div > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 10px;
+      }
+
+      .arrival-create__products-action {
+        justify-content: space-between;
+
+        .MuiIconButton-root {
+          padding: 9px;
+        }
+      }
+    }
+
+    .arrival-create__products-name {
+      width: 300px;
+    }
+
+    .arrival-create__products-unit {
+      width: 150px;
+    }
+
+    .arrival-create__products-qty {
+      width: 140px;
+    }
+
+    .arrival-create__products-costprice {
+      width: 180px;
+    }
+
+    .arrival-create__products-vat {
+      width: 180px;
+    }
+
+    .arrival-create__products-charge {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 272px;
+
+      &-markup {
+        width: 130px;
+      }
+
+      &-percent {
+        width: 92px;
+      }
+    }
+
+    .arrival-create__products-salesprice {
+      width: 180px;
+    }
+
+    .arrival-create__products-action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+    }
+  }
+
+  &__empty {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .MuiSelect-select.Mui-disabled, .MuiInputBase-input.Mui-disabled {
+    cursor: default;
+    z-index: 1;
+  }
+
+  .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+    background: #f2f2f2;
+    border-color: #e6e6e6;
+  }
+
+  .field-error {
+    .form-field-note {
+      color: #FF0000;
+      font-size: 13px;
+      flex-grow: 1;
+    }
+
+    .MuiOutlinedInput-notchedOutline, .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+      border-color: #FF0000;
+    }
+
+    .css-11b9rhy-control {
+      border-color: #FF0000;
+    }
+  }
+
+  .primary-btn-wr {
+    .MuiIconButton-root:not(.Mui-disabled) {
+      color: $primary;
+    }
+
+    .MuiIconButton-root.Mui-disabled .MuiSvgIcon-colorPrimary {
+      color: rgba(0, 0, 0, 0.26);
+    }
+  }
+
+  .delete-btn-wr {
+    .MuiIconButton-root {
+      color: $error;
+    }
+  }
+}
+
+.automatic-arrival-create {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  &-left {
+    display: flex;
+  }
+
+  &-right {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  & > div > div {
+    padding: 0 10px;
+  }
+}
+
+.arrival-create__controls {
+  margin-top: auto;
+
+  .arrival-create__comment {
+    padding: 20px 0;
+  }
+
+  .arrival-create__add {
+    text-align: right;
+  }
+}

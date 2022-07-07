@@ -1,0 +1,50 @@
+.container {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.info {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.info .item {
+  padding-left: 20px;
+  border-left: 2px solid #009f3c;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.filter {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.ml_20 {
+  margin-left: 20px;
+}
+
+.filter .item {
+  flex-grow: 1;
+}
+
+.filter_fixed_item {
+  width: 200px;
+}
+
+.content {
+  margin-top: 15px;
+  border: 1px solid #eee;
+  padding: 10px;
+  height: calc(100vh - 350px);
+  overflow: auto;
+}

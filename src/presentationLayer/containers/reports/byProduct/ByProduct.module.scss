@@ -1,0 +1,227 @@
+/*
+  common begin
+*/
+.container {
+  height: 100%;
+  width: 100%;
+  color: #555;
+
+}
+
+.title {
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.filter {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row;
+  height: 65px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  height: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px
+}
+
+/*
+  common end
+*/
+
+/*
+  filter
+*/
+
+.branch_select {
+  padding-top: 20px;
+  max-width: 220px;
+  min-width: 150px;
+  margin-left: 10px;
+}
+
+.filter .item {
+  margin-top: 12px;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+
+.filter .item.social {
+  flex-grow: 1;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search_box {
+  display: block;
+  width: 312px;
+  margin-left: 20px;
+}
+
+/*
+  filter end
+*/
+
+/*
+  info begin
+*/
+
+.info .item {
+  margin-left: 10px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.vertical_divider {
+  width: 2px;
+  background-color: #009f3c;
+  height: 100%;
+  margin: 0 20px;
+}
+
+
+/*
+  info end
+*/
+
+/*
+  toggle begin
+*/
+
+
+.category_toggle {
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.category_toggle.active {
+  color: #009f3c;
+}
+
+
+/*
+  toggle end
+*/
+
+
+/*
+  content begin
+*/
+.content {
+  width: 100%;
+  margin-top: 20px;
+  height: calc(100vh - 310px);
+  display: flex;
+  flex-flow: row;
+}
+
+.content .category_list {
+  //padding: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.content .category_list .wrapper .title {
+  color: #555;
+  font-size: 14px;
+}
+
+.content .category_list .wrapper .list {
+  margin-top: 10px;
+}
+
+.content .category_list .wrapper .search {
+  margin-top: 10px;
+}
+
+
+.content .category_list .wrapper {
+  width: 370px;
+  margin: 0 10px;
+}
+
+
+.category_list.open {
+  width: 390px;
+  opacity: 1;
+}
+
+.category_list.close {
+  width: 0;
+  opacity: 0;
+}
+
+.table {
+  width: 100%;
+  //background-color: #d63d3d;
+  overflow: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.table.open {
+  width: calc(100% - 400px);
+}
+
+.table.close {
+  width: 100%;
+  margin-left: 0;
+}
+
+.bordered {
+  border: 1px solid #ccc;
+}
+
+.ml {
+  margin-left: 10px;
+}
+
+/*
+  content end
+*/
+
+/*
+  footer begin
+*/
+
+.footer {
+  margin-top: 10px;
+  height: 50px;
+}
+
+
+/*
+  footer end
+*/
+
+
+
+
+
+
+
+

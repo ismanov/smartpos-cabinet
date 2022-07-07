@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  //padding: 1rem;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  left: 1.4rem;
+  top: -0.4rem;
+  width: 0;
+}
+
+.header.active {
+  width: 50%;
+}
+
+.content {
+  min-height: 300px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  overflow: auto;
+}

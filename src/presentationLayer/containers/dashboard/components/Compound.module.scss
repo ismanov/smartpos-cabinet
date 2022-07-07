@@ -1,0 +1,20 @@
+@import "../../../../styles/variables";
+
+.state_item  {
+  width: 100%;
+  color: $black;
+  border-left-width: 4px;
+  border-left-color: $primary;
+  border-left-style: solid;
+  padding: 5px 15px;
+}
+
+.state_item .title {
+  font-size: 1rem;
+}
+
+.state_item .value {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 10px;
+}

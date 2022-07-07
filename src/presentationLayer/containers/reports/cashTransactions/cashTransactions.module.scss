@@ -1,0 +1,57 @@
+.container {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  color: #555;
+}
+
+.picker {
+  margin-top: 0px;
+  justify-content: left;
+}
+
+.filter {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+}
+
+.filter .item {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row;
+}
+
+.total_elements {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.download_buttons {
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+}
+
+.content .table {
+  flex-grow: 1;
+  overflow: auto;
+  border: 1px solid #eee;
+}
+
+.content .cheque {
+  margin-left: 10px;
+}
+
+.pagination {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}

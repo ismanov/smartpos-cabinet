@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100%;
+}
+
+.title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: 20px;
+  flex-flow: row;
+}
+
+.title_text {
+  flex-grow: 1;
+}
+
+.title_buttons {
+
+}
+
+.content {
+  height: calc(100% - 140px);
+  margin-top: 10px;
+}
+
+.footer {
+  height: 50px;
+  margin-top: 10px;
+  text-align: right;
+}
